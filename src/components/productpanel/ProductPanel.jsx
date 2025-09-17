@@ -24,21 +24,18 @@ export default function ProductPanel() {
     return(
         <>
             <div className={styles.productPanel}>
-                <h2> Products </h2>
-                <div className={styles.grid}>
-
+                <h2> Product Catalog </h2>
+                <div className={styles.gridContainer}>
+                    {products.map((product) =>{
+                        console.log(product);
+                        return(
+                            <ProductCard
+                                id={product.id}
+                                product={product}
+                            />
+                        )
+                    })}
                 </div>
-
-                {products.map((product) =>{
-                    console.log(product);
-                    return(
-                        <ProductCard
-                        id={product.id}
-                        product={product}
-                        />
-                    )
-                })}
-
             </div>
         </>
     )
