@@ -1,6 +1,8 @@
 import styles from "./Navbar.module.css";
+import {useState} from "react";
 
-export default function Navbar(){
+export default function Navbar({query, setQuery}){
+
     return(
         <>
             <div className={styles.navbar}>
@@ -10,6 +12,21 @@ export default function Navbar(){
                         <li>Test 2</li>
                         <li>Test 3</li>
                     </ul>
+
+                </div>
+
+                <div className={styles.searchBar}>
+                    <form>
+                        <input
+                            id="product-name"
+                            type="text"
+                            placeholder="Search all products..."
+                            value={query}
+                            onChange={(e)=> setQuery(e.target.value)}
+                            required
+                        />
+                    </form>
+                    <h3>{query}</h3>
                 </div>
             </div>
         </>

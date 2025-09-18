@@ -20,6 +20,13 @@
     margin-bottom: 0.5rem;
 }
 
-.titles{
-    font-size: 0.8rem;
+.text{
+    margin-top: 1rem;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 1.1rem;
 }
