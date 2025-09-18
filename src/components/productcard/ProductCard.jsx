@@ -9,8 +9,7 @@ export default function ProductCard({product, onClick}) {
                     <div className={styles.details}>
                         <h3 className={`${styles.text} ${styles.title}`}>{product.title}</h3>
                         <h3 className={styles.text}>Category: {product.category}</h3>
-                        <h3 className={styles.text}>Stars: {product.rating.rate}</h3>
-                        <h3 className={styles.text}>Rating number: {product.rating.count}</h3>
+                        <h3 className={styles.text}>{product.rating.rate} ⭐ ({product.rating.count} reviews)</h3>
                         <h3 className={styles.text}>Price: ${product.price}</h3>
                     </div>
 
