@@ -2,12 +2,14 @@ import ProductCard from "../productcard/ProductCard.jsx";
 import styles from "./ProductPanel.module.css";
 import {useEffect, useState} from "react";
 import axios from "axios";
+import ProductView from "../productview/ProductView.jsx";
 
 export default function ProductPanel({query}) {
 
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [selected, setSelected] = useState(null);
 
     useEffect(() => {
         let mounted = true;
@@ -52,12 +54,20 @@ export default function ProductPanel({query}) {
                                 <ProductCard
                                     id = {item.id}
                                     product = {item}
+                                    onClick = {() => setSelected(item)}
                                 />
                                 )
                         })
                     ) : <p>No products found matching "{query}"</p>
                     }
                 </div>
+
+                {selected && (
+                    <ProductView
+                        product = {selected}
+                        onClose = {() => setSelected(null)}
+                    />
+                )}
             </div>
         </>
     )

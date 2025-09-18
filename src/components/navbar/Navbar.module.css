@@ -1,7 +1,9 @@
 
 .navbar{
-    background-color: orange;
+    position: fixed;
+    background-color: #f6712c;
     padding: 10px;
+    width: 100%;
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -11,7 +13,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px; /* space between nav options and search bar */
+    gap: 20px;
+    padding-left: 8%;
 }
 
 
@@ -32,7 +35,12 @@
 
 }
 
+.searchBar form {
+    width: 95%;
+}
+
 .searchBar input{
     border: none;
     outline: none;
+    width: 100%;
 }
