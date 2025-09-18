@@ -7,12 +7,32 @@
     flex-direction: row;
 }
 
+.navbarContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px; /* space between nav options and search bar */
+}
+
+
 .navbarOptions ul li{
     display: inline-block;
     padding: 10px 15px;
 }
 
+
 .searchBar{
-    background-color: lightgray;
-    width: 500px;
+    background-color: white;
+    height: 60%;
+    width: 30rem;
+    border-radius: 1px;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+
+}
+
+.searchBar input{
+    border: none;
+    outline: none;
 }

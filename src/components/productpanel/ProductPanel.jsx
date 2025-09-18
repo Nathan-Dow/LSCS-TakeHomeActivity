@@ -55,7 +55,7 @@ export default function ProductPanel({query}) {
                                 />
                                 )
                         })
-                    ) : <p>No products found.</p>
+                    ) : <p>No products found matching "{query}"</p>
                     }
                 </div>
             </div>
