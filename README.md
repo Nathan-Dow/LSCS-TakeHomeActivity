@@ -14,10 +14,13 @@ A requirement for LSCS R&D AVP application
 Clone the repository : https://github.com/Nathan-Dow/LSCS-TakeHomeActivity.git
 cd LSCS-TakeHomeActivity
 npm install
+```
 
 ## Run Development Server
 ```bash
 npm run dev
+```
+The app will be available at: http://localhost:5173/ (default)
 
 ## Dependencies
 **React**
