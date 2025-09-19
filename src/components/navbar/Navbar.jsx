@@ -5,9 +5,9 @@ export default function Navbar({query, setQuery}){
     return(
         <>
             <div className={styles.navbar}>
-                <div className={styles.navbarContent}>
+
                     <div className={styles.navbarOptions}>
-                        <ul>
+                        <ul className={styles.unorderedOptions}>
                             <li>Products</li>
                             <li>About Us</li>
                             <li>Contact</li>
@@ -28,7 +28,9 @@ export default function Navbar({query, setQuery}){
                         </form>
                     </div>
 
-                </div>
+                    <div className={styles.cartHolder}>
+                        <h3>Cart</h3>
+                    </div>
 
             </div>
         </>

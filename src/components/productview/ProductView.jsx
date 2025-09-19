@@ -25,6 +25,11 @@ export default function ProductView({product, onClose}){
                         <h3 className={styles.price}>${product.price}</h3>
                         <h2 className={styles.additional}>Description</h2>
                         <h3>{product.description}</h3>
+
+
+                        <div className={styles.toCart}>
+                            Add to cart
+                        </div>
                     </div>
                 </div>
 

@@ -5,6 +5,7 @@ import {useState} from "react";
 function App() {
 
     const [query, setQuery] = useState("");
+
   return (
    <>
        <div className="app">
