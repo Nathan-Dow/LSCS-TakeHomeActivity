@@ -4,7 +4,7 @@ A requirement for LSCS R&D AVP application
 
 
 ## Features
-- Browse products fetched from an API endpoint  
+- Browse products fetched from an API endpoint (https://fakestoreapi.com/products)  
 - View detailed product information by clicking a product  
 - Search for products by name  
 - Add items to cart and proceed to checkout  
