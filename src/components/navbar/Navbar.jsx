@@ -1,7 +1,10 @@
 import styles from "./Navbar.module.css";
+import CartView from "./../cartview/CartView.jsx"
+import {useState} from "react";
 
-export default function Navbar({query, setQuery}){
+export default function Navbar({query, setQuery, cart}){
 
+    const [clicked, setClicked] = useState(false);
     return(
         <>
             <div className={styles.navbar}>
@@ -28,10 +31,16 @@ export default function Navbar({query, setQuery}){
                         </form>
                     </div>
 
-                    <div className={styles.cartHolder}>
+                    <div className={styles.cartHolder} onClick={()=>setClicked(true)}>
                         <h3>Cart</h3>
                     </div>
 
+                {clicked && (
+                    <CartView
+                    cart={cart}
+                    onClose = {() => setClicked(false)}
+                    />
+                )}
             </div>
         </>
     )

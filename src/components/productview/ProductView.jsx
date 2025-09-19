@@ -1,6 +1,6 @@
 
 import styles from "./ProductView.module.css"
-export default function ProductView({product, onClose}){
+export default function ProductView({product, addToCart, onClose}) {
 
     return (
 
@@ -27,7 +27,7 @@ export default function ProductView({product, onClose}){
                         <h3>{product.description}</h3>
 
 
-                        <div className={styles.toCart}>
+                        <div className={styles.toCart} onClick={() => addToCart(product)}>
                             Add to cart
                         </div>
                     </div>

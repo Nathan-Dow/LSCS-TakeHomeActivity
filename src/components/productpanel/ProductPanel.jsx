@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import ProductView from "../productview/ProductView.jsx";
 
-export default function ProductPanel({query}) {
+export default function ProductPanel({query, addToCart}) {
 
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -65,6 +65,7 @@ export default function ProductPanel({query}) {
                 {selected && (
                     <ProductView
                         product = {selected}
+                        addToCart={addToCart}
                         onClose = {() => setSelected(null)}
                     />
                 )}

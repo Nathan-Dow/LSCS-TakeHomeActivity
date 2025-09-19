@@ -53,3 +53,7 @@ li{
     min-width: 200px;
     padding-left: 30px;
 }
+
+.cartHolder:hover{
+    cursor: pointer;
+}
