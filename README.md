@@ -2,7 +2,6 @@
 
 A requirement for LSCS R&D AVP application
 
----
 
 ## Features
 - Included Products page to view api endpoint data
@@ -11,9 +10,13 @@ A requirement for LSCS R&D AVP application
 - Included Checkout feature
 
 ## Installation
+```bash
 Clone the repository : https://github.com/Nathan-Dow/LSCS-TakeHomeActivity.git
 cd LSCS-TakeHomeActivity
 npm install
+
+## Run Development Server
+```bash
 npm run dev
 
 ## Dependencies
