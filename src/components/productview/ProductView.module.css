@@ -3,13 +3,18 @@
     background-color: white;
     position: fixed;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     top: 5%;
     left: 5%;
     width: 90%;
     height: 90%;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mainDisplay{
+    display: flex;
+    flex-direction: row;
 }
 
 .mainPanel img{
@@ -27,6 +32,10 @@
     font-weight: normal;
 }
 
+.additional{
+    margin-left: 0;
+}
+
 .title{
     font-weight: bold;
 }
@@ -38,6 +47,23 @@ button{
 .price{
     font-weight: bold;
     color: #f6712c;
+}
+
+.closeContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mainPanel button{
+    border: none;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    background: orange;
+    margin: 0.5rem;
+    border-radius: 5px;
+    color: #392f2f
 }
 
 

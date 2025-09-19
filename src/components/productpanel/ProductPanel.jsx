@@ -46,7 +46,7 @@ export default function ProductPanel({query}) {
     return(
         <>
             <div className={styles.productPanel}>
-                <h2> Product Catalog </h2>
+                <h2 className={styles.productPanelTitle}> Product Catalog </h2>
                 <div className={styles.gridContainer}>
                     {filteredData.length > 0 ? (
                         filteredData.map((item) => {

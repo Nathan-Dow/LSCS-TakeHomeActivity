@@ -9,8 +9,8 @@ export default function Navbar({query, setQuery}){
                     <div className={styles.navbarOptions}>
                         <ul>
                             <li>Products</li>
-                            <li>Test 2</li>
-                            <li>Test 3</li>
+                            <li>About Us</li>
+                            <li>Contact</li>
                         </ul>
 
                     </div>
