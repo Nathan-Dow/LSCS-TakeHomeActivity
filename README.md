@@ -1,12 +1,23 @@
-# React + Vite
+# LSCS Take Home Activity
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A requirement for LSCS R&D AVP application
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Included Products page to view api endpoint data
+- Included functionality to click on the Products page to further view product details
+- Included Search feature for product
+- Included Checkout feature
 
-## Expanding the ESLint configuration
+## Installation
+Clone the repository : https://github.com/Nathan-Dow/LSCS-TakeHomeActivity.git
+cd LSCS-TakeHomeActivity
+npm install
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Dependencies
+**React**
+**Axios**
+**Vite**
+
