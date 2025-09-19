@@ -32,6 +32,7 @@ export default function Navbar({query, setQuery, cart}){
                     </div>
 
                     <div className={styles.cartHolder} onClick={()=>setClicked(true)}>
+                        <img src="src/assets/cart.png" alt="cart" width={50} height={40}/>
                         <h3>Cart</h3>
                     </div>
 

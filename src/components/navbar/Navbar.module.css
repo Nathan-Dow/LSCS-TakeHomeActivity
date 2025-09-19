@@ -49,9 +49,12 @@ li{
 
 .cartHolder{
     margin-left: 20%;
-    background-color: white;
     min-width: 200px;
     padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
 }
 
 .cartHolder:hover{

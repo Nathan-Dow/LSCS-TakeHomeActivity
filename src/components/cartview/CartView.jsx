@@ -1,6 +1,5 @@
 import styles from './CartView.module.css'
 export default function CartView({cart, onClose}){
-    console.log("Cart contents:", cart);
 
     return(
         <>
