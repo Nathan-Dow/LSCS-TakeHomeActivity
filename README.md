@@ -4,14 +4,14 @@ A requirement for LSCS R&D AVP application
 
 
 ## Features
-- Included Products page to view api endpoint data
-- Included functionality to click on the Products page to further view product details
-- Included Search feature for product
-- Included Checkout feature
+- Browse products fetched from an API endpoint  
+- View detailed product information by clicking a product  
+- Search for products by name  
+- Add items to cart and proceed to checkout  
 
 ## Installation
 ```bash
-Clone the repository : https://github.com/Nathan-Dow/LSCS-TakeHomeActivity.git
+git clone https://github.com/Nathan-Dow/LSCS-TakeHomeActivity.git
 cd LSCS-TakeHomeActivity
 npm install
 ```
@@ -23,7 +23,7 @@ npm run dev
 The app will be available at: http://localhost:5173/ (default)
 
 ## Dependencies
-**React**
-**Axios**
-**Vite**
+- React
+- Axios
+- Vite
 
