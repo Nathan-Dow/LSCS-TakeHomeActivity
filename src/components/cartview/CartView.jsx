@@ -6,7 +6,7 @@ export default function CartView({cart, onClose}){
             <div className={styles.cartContainer}>
 
                 <button onClick={onClose}>
-                    Return
+                    X
                 </button>
 
                 <div className={styles.cartItems}>

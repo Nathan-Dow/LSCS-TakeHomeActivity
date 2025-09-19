@@ -1,7 +1,15 @@
 
 import styles from "./ProductView.module.css"
+import {useState} from "react";
 export default function ProductView({product, addToCart, onClose}) {
 
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handleAddtoCart = () => {
+        addToCart(product);
+        setShowPopup(true);
+        setTimeout(() => setShowPopup(false), 750);
+    }
     return (
 
         <>
@@ -9,7 +17,7 @@ export default function ProductView({product, addToCart, onClose}) {
 
                 <div className={styles.closeContainer}>
                     <button onClick={onClose}>
-                        return
+                        X
                     </button>
                 </div>
 
@@ -27,9 +35,13 @@ export default function ProductView({product, addToCart, onClose}) {
                         <h3>{product.description}</h3>
 
 
-                        <div className={styles.toCart} onClick={() => addToCart(product)}>
+                        <div className={styles.toCart} onClick={handleAddtoCart}>
                             Add to cart
                         </div>
+
+                        {showPopup && (
+                            <div className={styles.popUp}> Added to Cart{"!"}</div>
+                        )}
                     </div>
                 </div>
 

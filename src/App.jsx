@@ -6,6 +6,11 @@ function App() {
 
     const [query, setQuery] = useState("");
     const [cartData, setCartData] = useState([]);
+
+    /*
+    * Used Gen-AI to help generate code for handleAddToCart
+    * utility: manages the current data for Shopping Cart
+    * */
     const handleAddToCart = (product) => {setCartData((prev) => [...prev, product])}
   return (
    <>

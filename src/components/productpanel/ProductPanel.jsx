@@ -14,7 +14,7 @@ export default function ProductPanel({query, addToCart}) {
     useEffect(() => {
         let mounted = true;
         axios
-            .get("https://fakestoreapi.com/products") // sample API, replace with yours later
+            .get("https://fakestoreapi.com/products")
             .then((res) => {
                 if (!mounted) return;
                 setProducts(res.data || []);
@@ -30,6 +30,7 @@ export default function ProductPanel({query, addToCart}) {
             mounted = false;
         };
 
+
     }, []);
 
     let filteredData;
@@ -42,25 +43,29 @@ export default function ProductPanel({query, addToCart}) {
         );
     }
 
-
     return(
         <>
             <div className={styles.productPanel}>
                 <h2 className={styles.productPanelTitle}> Product Catalog </h2>
-                <div className={styles.gridContainer}>
-                    {filteredData.length > 0 ? (
-                        filteredData.map((item) => {
-                            return(
+
+                {loading && <p>Loading products...</p>}
+                {error && <p style={{ color: "red" }}>{error}</p>}
+
+                {!loading && !error && (
+                    <div className={styles.gridContainer}>
+                        {filteredData.length > 0 ? (
+                            filteredData.map((item) => (
                                 <ProductCard
-                                    id = {item.id}
-                                    product = {item}
-                                    onClick = {() => setSelected(item)}
+                                    key={item.id}
+                                    product={item}
+                                    onClick={() => setSelected(item)}
                                 />
-                                )
-                        })
-                    ) : <p>No products found matching "{query}"</p>
-                    }
-                </div>
+                            ))
+                        ) : (
+                            <p>No products found matching "{query}"</p>
+                        )}
+                    </div>
+                )}
 
                 {selected && (
                     <ProductView
